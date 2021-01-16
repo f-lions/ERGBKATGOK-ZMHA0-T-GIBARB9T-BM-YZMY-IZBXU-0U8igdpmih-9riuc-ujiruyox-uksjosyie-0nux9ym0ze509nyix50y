@@ -1,0 +1,25 @@
+
+<!DOCTYPE html>
+<html>
+<link rel="stylesheet" type="text/css" href="app.browser.min.style.css">
+<link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Rubik">
+<head><title>Nite Browse</title>
+</head>
+<body><div class="top" id="g">
+	
+<input class="b" type="url" id="x" placeholder="Enter Your Url." value="">
+<input id="y" type="button" class="c" value="Visit!" onclick="change();label.style.display = 'block'; niteFunction();">
+<p id="h"></div>
+</div>
+<!--<button onclick="min(); this" id="bvl" class="min"><img id="imo" src="up-down-btn.svg" width="10px"></button>
+-->
+<pre>
+</pre>
+<label id="label" for="loading" title="loading Page..." style="font-family: Rubik;text-align: center;display: none;position: absolute;right:10%;top: 1.8%"><img src="loader-blue.svg" width="40" style="margin-left: 20px"></label><button class="r" onclick="reLoad()"></button>
+
+<iframe onload="this.style.display = 'block'; label.style.display = 'none';" id="i" style="position: absolute;left: 0%;width: 100%;top:9%;height: 91vh; border: 0px;margin: 0PX;display: none;"></iframe>
+<div id="snackbar">Finding Page...<pre></pre><span id="wn">Busy</span></div>
+<script type="text/javascript" src="app.browser.min.js"></script>
+
+</body>
+</html>

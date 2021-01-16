@@ -1,0 +1,100 @@
+
+:root {
+	--o-g : rgba(211,211,211,0.90);
+	--g : rgba(60,64,67,0.90);
+	--o-w: rgba(255,255,255,0.7);;
+	--nite-black : #181A1A;
+	--nite-white : #D0D3D4;
+	--nite-grey  : #D5DBDB;
+}
+body , html{
+	margin: 0px 0px;
+}
+#snackbar {
+	background-image: url('not_fication.svg');
+	background-repeat: no-repeat;background-position: top-left; background-size: 40px; 
+  text-overflow: ellipsis;
+  overflow: hidden; 
+  white-space: nowrap;width: 300px;
+box-shadow : 0px 0px 5px 5px #333;
+border-radius :10px;
+font-family:Rubik;
+  visibility: hidden;
+  min-width: 250px;
+  margin-left: -125px;
+  background-color: var(--o-g);
+  color: #333;
+  text-align: center;
+  padding: 16px;
+  position: fixed;
+  z-index: 1;
+  left: 50%;
+  bottom: 30px;
+  font-size: 17px;
+  font-weight: 0;
+}
+
+#snackbar.show {
+  visibility: visible;
+  -webkit-animation: fadein 0.5s, fadeout 0.5s 2.5s;
+  animation: fadein 0.5s, fadeout 0.5s 2.5s;
+}
+
+@-webkit-keyframes fadein {
+  from {bottom: 0; opacity: 0;} 
+  to {bottom: 30px; opacity: 1;}
+}
+
+@keyframes fadein {
+  from {bottom: 0; opacity: 0;}
+  to {bottom: 30px; opacity: 1;}
+}
+
+@-webkit-keyframes fadeout {
+  from {bottom: 30px; opacity: 1;} 
+  to {bottom: 0; opacity: 0;}
+}
+
+@keyframes fadeout {
+  from {bottom: 30px; opacity: 1;}
+  to {bottom: 0; opacity: 0;}
+}
+
+
+.r {
+	border-radius: 50%; width: 35px;height: 35px;
+background-image:url('reload.svg');background-repeat: no-repeat;background-size: 35px;background-position: center;
+border:0px; background-color: transparent;outline: none; position: absolute;top: 0;top: 2%;right: 18%; cursor: pointer;
+}
+.r:hover {
+	background-color: var(--nite-grey);
+}
+
+
+.top {
+	
+	background-color: #BDC3C7;padding: 10px 10px;
+}
+
+	.b {
+		background-image: url('rews.png'); background-repeat: no-repeat; background-size: 30px; background-position: left;
+		font-size: 20px;
+width: 90%;height: 45px; border: 1px #0000; padding-left: 60px;padding-right: 20px;
+border-top-left-radius:  100px ;border-bottom-left-radius: 100px;background-color: #eee;font-family: Rubik; outline: none;
+}
+.c {color: #fff;
+width: 120px;height: 47px; border: 1px #0000;
+border-bottom-right-radius: 100px ;border-top-right-radius: 100px ;background-color: #05C4F3;
+cursor: pointer;font-family: Rubik;font-size: 20px;outline: none;
+margin: 0px;position: absolute;right: 1%;
+}
+.c:hover {
+background-color: #00CDFF;transition: 0.4s;
+}
+.c:focus {
+background-color: #05C4F3;
+}
+.min {
+	background-color: #05C4F3;
+	border: 	0px;position: absolute;top:82px;right: 0;width: 25px;height: 25px; cursor: pointer;
+}
